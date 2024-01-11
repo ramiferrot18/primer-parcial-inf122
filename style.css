@@ -1,0 +1,100 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #2B2E34;
+    --gray-blue: #0D1423;
+    --yellow: #D1AE31;
+    --clear-gray: #AFC0E2;
+    --sm: 16px;
+    --md: 20px;
+    --lg: 60px;
+}
+body {
+    background-color: var(--black);
+    font-family: 'Nunito';
+    margin: 0;
+}
+.main {
+    background-color: var(--gray-blue);
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: end;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+
+}
+.perfilfoto{
+    align-items: left;
+    transition: circle;
+}
+.Nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+.description{
+    text-align: center;
+    color: var(--white);
+}
+.redes{
+    text-align: center;
+    align-items: center;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10% 0 10%;
+
+}
+.card {
+    background-color: var(--gray-blue);
+
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 60%;
+    width: 10%;
+    border-radius: 8px;
+}
+.card p {
+    font-size: var(--sm);
+    text-align: center;
+    color: var(--clear-gray);
+}
+button {
+    font-size: large;
+    padding: 5px 20px 5px 20px;
+    background-color: var(--yellow);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+button :hover{
+    color: red;
+}
+.boton2{
+    font-size: large;
+    padding: 5px 20px 5px 20px;
+    background-color: var(--gray-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.fotos img{
+    width: 250px;
+    height: 150px;
+}
